@@ -7,9 +7,24 @@ body {
   text-align: center;
 }
 
-#front-wheel {
-  animation: wheel 1s ease;
+#front-wheel,
+#back-wheel {
+  animation: wheel 2s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
 }
+
+#bike,
+#guy {
+  animation: bike 1s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+
+#hat {
+  animation: hat 0.3s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+
 @keyframes wheel {
     from {
       transform: rotateZ(0deg);
@@ -17,4 +32,22 @@ body {
     to {
       transform: rotateZ(360deg);
     }
+}
+
+@keyframes bike {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(15deg);
+  }
+}
+
+@keyframes hat {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(5deg);
+  }
 }
