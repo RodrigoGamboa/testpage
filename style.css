@@ -228,6 +228,47 @@ nav {
     transform: translate(50%, 5%);
   }
   .cover img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80%;
+  }
+  .big-circle, .medium-circle, .small-circle {
+    opacity: 10%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .presentation {
+    flex-direction: column;
+  }
+  .introduction {
+    margin-top: 5vh;
+    text-align: center;
+  }
+  .intro-text h1 {
+    font-size: 20px;
+  }
+  .intro-text p {
+    font-size: 12px;
+  }
+  .cta {
+    padding: 20px 0px 0px 0px;
+  }
+  .cta-add {
+    margin-top: 10px;
+    margin-left: auto;
+  }
+  .laptop-select {
+    bottom: 5%;
+    right: 50%;
+    width: 50%;
+    transform: translate(50%, 5%);
+  }
+  .cover img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     height: 80%;
   }
   .big-circle, .medium-circle, .small-circle {
