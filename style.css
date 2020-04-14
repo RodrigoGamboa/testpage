@@ -56,6 +56,7 @@ body {
 */
 
 /* Responsive css code, Ref: https://www.youtube.com/watch?v=ZeDP-rzOnAA */
+/*
 * {
   margin: 0px;
   padding: 0px;
@@ -274,4 +275,29 @@ nav {
   .big-circle, .medium-circle, .small-circle {
     opacity: 10%;
   }
+}
+*/
+
+/* SVG morphing animation css code, Ref: https://www.youtube.com/watch?v=bfaPnlYE8Jo&list=PLDyQo7g0_nsXEOxGlAgccV8fu-cHZnI5B */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  background: rgb(199, 199, 199);
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+svg {
+  cursor: pointer;
+}
+
+body {
+  font-family: sans-serif;
 }
